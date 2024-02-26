@@ -236,4 +236,8 @@ subMenuEl.addEventListener("click", function (event) {
 
   // Update the contents of mainEl to the contents of the <a> element clicked within subMenuEl
   mainEl.innerHTML = "<h1>" + event.target.textContent + "</h1>";
+  //If the ABOUT link is clicked, an <h1>About</h1> should be displayed.
+  if ((event.target.textContent == "about") | "ABOUT") {
+    mainEl.innerHTML = "<h1>About</h1>";
+  }
 });
